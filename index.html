@@ -1,0 +1,154 @@
+<!doctype html><html lang=ko><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1">
+<title>무교동 회식 메뉴</title><meta name=color-scheme content=light>
+<link rel=stylesheet href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{--bg:#f2f2f7;--card:rgba(255,255,255,.86);--ink:#1c1c1e;--sub:#636366;--faint:#8e8e93;--line:rgba(60,60,67,.12);--fill:rgba(118,118,128,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Pretendard,-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+.hero{position:relative;overflow:hidden;padding:40px 16px 26px}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(60px);opacity:.55;z-index:0}
+.hero:before{width:420px;height:420px;background:#ffd9b8;top:-180px;left:-120px}.hero:after{width:380px;height:380px;background:#d6e4ff;top:-160px;right:-120px}
+.hero>*{position:relative;z-index:1}.in{max-width:1120px;margin:0 auto}
+.eyebrow{display:inline-block;font-size:13px;font-weight:600;background:rgba(255,255,255,.7);backdrop-filter:blur(10px);border:1px solid var(--line);padding:4px 12px;border-radius:999px;margin:0 0 12px}
+h1{font-size:clamp(30px,5vw,44px);line-height:1.15;margin:0 0 10px;letter-spacing:-.03em;font-weight:800}
+.sub{color:var(--sub);margin:0 0 20px;font-size:15px}
+.kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;max-width:640px}
+.kpi{background:rgba(255,255,255,.75);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--line);border-radius:16px;padding:12px 14px}
+.kpi small{display:block;color:var(--sub);font-size:12px}.kpi b{font-size:20px;letter-spacing:-.02em}
+nav{position:sticky;top:0;z-index:10;background:rgba(242,242,247,.72);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--line)}
+nav{padding:0 16px}nav .in{display:flex;gap:6px;padding:10px 0;overflow-x:auto;scrollbar-width:none}
+nav a{flex:1 0 auto;text-align:center;padding:8px 16px;border-radius:999px;background:var(--fill);color:var(--ink);text-decoration:none;font-weight:700;font-size:14px}
+nav a:hover{background:#fff}
+main{padding:8px 16px 60px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:6px 16px 10px;margin:18px 0 6px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.box h2{font-size:17px;margin:12px 0 4px}.box p{margin:0 0 6px;color:var(--sub);font-size:13px}
+.ov{width:100%;border-collapse:collapse;font-size:14px}.ov th{font-size:12px;color:var(--faint);font-weight:600;text-align:left;padding:8px 6px;border-bottom:1px solid var(--line)}
+.ov td{padding:10px 6px;border-bottom:1px solid var(--line)}.ov tr:last-child td{border-bottom:0}.ov .n,.ov th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.ov a{color:var(--ink);font-weight:700;text-decoration:none;border-bottom:1.5px solid var(--line)}.ov td.cat,.ov th.cat{font-size:12px;color:var(--sub);white-space:nowrap;width:56px}.star{display:inline-block;font-size:11px;font-weight:800;margin-left:6px;padding:1px 7px;border:1.5px solid var(--ink);border-radius:999px;white-space:nowrap;vertical-align:1px}.ov td.left{font-weight:800}
+.ovwrap{overflow-x:auto}
+section{scroll-margin-top:64px;margin-top:34px}
+.sechead{display:flex;align-items:center;gap:12px;margin-bottom:12px}.emo{font-size:30px;width:52px;height:52px;display:grid;place-items:center;background:#fff;border-radius:16px;border:1px solid var(--line)}
+.en{margin:0;font-size:11px;letter-spacing:.14em;color:var(--faint);font-weight:700}.sechead h2{margin:0;font-size:24px;letter-spacing:-.02em}
+.grid{display:grid;gap:14px}
+.card{scroll-margin-top:70px;background:var(--card);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 1px 3px rgba(0,0,0,.04),0 8px 24px rgba(0,0,0,.04);transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-2px);box-shadow:0 2px 6px rgba(0,0,0,.05),0 14px 34px rgba(0,0,0,.07)}
+.card.rec{border:2px solid var(--ink)}
+.top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+h3{margin:0;font-size:19px;letter-spacing:-.02em}.line{margin:2px 0 0;color:var(--sub);font-size:14px}
+.badge{flex:none;background:var(--ink);color:#fff;font-size:12px;font-weight:800;padding:5px 10px;border-radius:999px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}.chips span{background:var(--fill);border-radius:8px;padding:3px 9px;font-size:12.5px;color:#3a3a3c}
+.price{display:flex;align-items:center;background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 14px}
+.price>div:not(.sep){flex:1}.price small{display:block;font-size:12px;color:var(--sub)}.price strong{font-size:24px;letter-spacing:-.03em;font-variant-numeric:tabular-nums}.price i{font-style:normal;font-size:14px;font-weight:600;margin-left:2px}
+.sep{width:1px;align-self:stretch;background:var(--line);margin:0 14px}
+.price>div:last-child strong{font-weight:500}
+.bar{height:6px;background:var(--fill);border-radius:99px;overflow:hidden;margin:12px 0 4px}.bar span{display:block;height:100%;background:var(--ink);border-radius:99px}
+.barlabel{margin:0;font-size:12px;color:var(--faint);text-align:right;font-variant-numeric:tabular-nums}
+.desc{font-size:14px;margin:12px 0 8px}
+.menu{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.menu li{display:grid;grid-template-columns:1fr 40px auto;gap:6px;padding:8px 0;border-bottom:1px solid var(--line);font-size:14px}
+.qty{color:var(--sub);text-align:center;font-weight:700}.amt{text-align:right;font-variant-numeric:tabular-nums;color:#3a3a3c}
+.links{display:flex;gap:8px;margin-top:14px}.links a{flex:1;text-align:center;font-size:13.5px;font-weight:700;color:var(--ink);background:var(--fill);padding:10px;border-radius:12px;text-decoration:none}.links a:hover{background:#e5e5ea}
+.links a:after{content:" ↗"}
+footer{max-width:1120px;margin:40px auto 0;font-size:12.5px;color:var(--sub)}footer li{margin-bottom:4px}
+@media(min-width:900px){.hero{padding:56px 32px 34px}main{padding:8px 32px 80px}nav{padding:0 32px}.grid{grid-template-columns:1fr 1fr;align-items:start}.kpi b{font-size:22px}}
+@media(max-width:560px){.kpis{gap:8px}.kpi{padding:10px 11px;border-radius:14px}.kpi b{font-size:16px}.ov .hide{display:none}.ov td.cat,.ov th.cat{display:none}.ov td{padding:11px 4px}.star{display:block;width:max-content;margin:4px 0 0}nav a{flex:1 1 0;padding:8px 6px}.price strong{font-size:21px}.sep{margin:0 10px}}
+</style></head><body>
+<header class=hero><div class=in>
+<p class=eyebrow>10월 8일 목요일 저녁 · 무교동</p>
+<h1>무교동 회식, 어디로 갈까</h1>
+<p class=sub>5명 · 1인 4만 원 · 한식·중식·양식·일식 9곳 구성안</p>
+<div class=kpis><div class=kpi><small>총예산</small><b>200,000원</b></div><div class=kpi><small>음식 구성</small><b>13~16만</b></div><div class=kpi><small>남는 돈</small><b>= 술값</b></div></div>
+</div></header>
+<nav><div class=in><a href="#kor">🥢 한식</a><a href="#chn">🥟 중식</a><a href="#wst">🍝 양식</a><a href="#jpn">🍣 일식</a></div></nav>
+<main><div class=in>
+<div class=box><h2>한눈에 보기</h2><p>가게 이름을 누르면 구성으로 이동해요. 여유 금액이 술값입니다.</p>
+<div class=ovwrap><table class=ov><thead><tr><th class=cat>종류</th><th>가게</th><th class="n hide">음식</th><th class=n>술 여유</th><th class=n>마감</th><th class="n hide">거리</th></tr></thead><tbody><tr><td class=cat>한식</td><td><a href="#kor-0">장군보쌈</a><span class=star>★ 추천</span></td><td class="n hide">134,000</td><td class="n left">66,000</td><td class=n>22:00</td><td class="n hide">120m</td></tr><tr><td class=cat>한식</td><td><a href="#kor-1">오징어풍경</a></td><td class="n hide">134,000</td><td class="n left">66,000</td><td class=n>23:00</td><td class="n hide">34m</td></tr><tr><td class=cat>한식</td><td><a href="#kor-2">해봉정육</a></td><td class="n hide">145,000</td><td class="n left">55,000</td><td class=n>22:00</td><td class="n hide">46m</td></tr><tr><td class=cat>중식</td><td><a href="#chn-0">이가네양꼬치</a><span class=star>★ 추천</span></td><td class="n hide">143,000</td><td class="n left">57,000</td><td class=n>23:30</td><td class="n hide">231m</td></tr><tr><td class=cat>중식</td><td><a href="#chn-1">덕후선생</a></td><td class="n hide">152,000</td><td class="n left">48,000</td><td class=n>21:30</td><td class="n hide">298m</td></tr><tr><td class=cat>양식</td><td><a href="#wst-0">샤이바나</a><span class=star>★ 추천</span></td><td class="n hide">154,400</td><td class="n left">45,600</td><td class=n>21:00</td><td class="n hide">107m</td></tr><tr><td class=cat>양식</td><td><a href="#wst-1">스케줄오스테리아</a></td><td class="n hide">159,000</td><td class="n left">41,000</td><td class=n>22:00</td><td class="n hide">230m</td></tr><tr><td class=cat>일식</td><td><a href="#jpn-0">미진일식</a><span class=star>★ 추천</span></td><td class="n hide">145,000</td><td class="n left">55,000</td><td class=n>22:00</td><td class="n hide">83m</td></tr><tr><td class=cat>일식</td><td><a href="#jpn-1">야마야</a></td><td class="n hide">140,500</td><td class="n left">59,500</td><td class=n>21:30</td><td class="n hide">298m</td></tr></tbody></table></div></div>
+<section id=kor><div class=sechead><span class=emo>🥢</span><div><p class=en>KOREAN</p><h2>한식</h2></div></div><div class=grid><article class="card rec" id="kor-0">
+<div class=top><div><h3>장군보쌈</h3><p class=line>실패 없는 회식 정석</p></div><span class=badge>★ 추천</span></div>
+<div class=chips><span>📍 120m</span><span>🕙 ~22:00</span><span>★ 3.8</span></div>
+<div class=price><div><small>음식 1인</small><strong>26,800<i>원</i></strong></div><div class=sep></div><div><small>술·추가 여유</small><strong>66,000<i>원</i></strong></div></div>
+<div class=bar><span style="width:67.0%"></span></div>
+<p class=barlabel>음식 134,000원 / 예산 200,000원</p>
+<p class=desc>보쌈·족발·굴보쌈을 한 상에 깔고 해물파전과 쟁반막국수로 마무리.</p>
+<ul class=menu><li><span>보쌈족발세트(대)</span><span class=qty></span><span class=amt>55,000</span></li><li><span>굴보쌈(중)</span><span class=qty></span><span class=amt>45,000</span></li><li><span>해물파전</span><span class=qty></span><span class=amt>18,000</span></li><li><span>쟁반막국수</span><span class=qty></span><span class=amt>16,000</span></li></ul>
+<div class=links><a href="https://map.naver.com/p/search/%EC%9E%A5%EA%B5%B0%EB%B3%B4%EC%8C%88%20%EB%AC%B4%EA%B5%90%EB%8F%99" target=_blank rel=noopener>네이버 지도</a><a href="https://www.diningcode.com/profile.php?rid=nsO0DulWQieO" target=_blank rel=noopener>메뉴·리뷰</a></div>
+</article><article class="card" id="kor-1">
+<div class=top><div><h3>오징어풍경 무교동점</h3><p class=line>왁자지껄 · 늦게까지</p></div></div>
+<div class=chips><span>📍 34m</span><span>🕙 ~23:00</span><span>★ 4.0</span></div>
+<div class=price><div><small>음식 1인</small><strong>26,800<i>원</i></strong></div><div class=sep></div><div><small>술·추가 여유</small><strong>66,000<i>원</i></strong></div></div>
+<div class=bar><span style="width:67.0%"></span></div>
+<p class=barlabel>음식 134,000원 / 예산 200,000원</p>
+<p class=desc>23시까지 영업해서 2차 없이 한자리에서 길게 가기 좋음.</p>
+<ul class=menu><li><span>오징어+돼지불고기(중)</span><span class=qty>×2</span><span class=amt>96,000</span></li><li><span>오징어튀김</span><span class=qty></span><span class=amt>26,000</span></li><li><span>계란찜</span><span class=qty></span><span class=amt>12,000</span></li></ul>
+<div class=links><a href="https://map.naver.com/p/search/%EC%98%A4%EC%A7%95%EC%96%B4%ED%92%8D%EA%B2%BD%20%EB%AC%B4%EA%B5%90%EB%8F%99" target=_blank rel=noopener>네이버 지도</a><a href="https://www.diningcode.com/profile.php?rid=1iX419LKLKX6" target=_blank rel=noopener>메뉴·리뷰</a></div>
+</article><article class="card" id="kor-2">
+<div class=top><div><h3>해봉정육 무교점</h3><p class=line>한우 구이</p></div></div>
+<div class=chips><span>📍 46m</span><span>🕙 ~22:00</span><span>★ 3.9</span></div>
+<div class=price><div><small>음식 1인</small><strong>29,000<i>원</i></strong></div><div class=sep></div><div><small>술·추가 여유</small><strong>55,000<i>원</i></strong></div></div>
+<div class=bar><span style="width:72.5%"></span></div>
+<p class=barlabel>음식 145,000원 / 예산 200,000원</p>
+<p class=desc>400g을 5명이 나누면 1인 80g이라 양은 적은 편. 된장찌개·공기밥으로 채우는 구성.</p>
+<ul class=menu><li><span>특수부위모듬 400g</span><span class=qty></span><span class=amt>132,000</span></li><li><span>한우된장찌개</span><span class=qty></span><span class=amt>13,000</span></li></ul>
+<div class=links><a href="https://map.naver.com/p/search/%ED%95%B4%EB%B4%89%EC%A0%95%EC%9C%A1%20%EB%AC%B4%EA%B5%90%EB%8F%99" target=_blank rel=noopener>네이버 지도</a><a href="https://www.diningcode.com/profile.php?rid=IUuouYC5OHBE" target=_blank rel=noopener>메뉴·리뷰</a></div>
+</article></div></section><section id=chn><div class=sechead><span class=emo>🥟</span><div><p class=en>CHINESE</p><h2>중식</h2></div></div><div class=grid><article class="card rec" id="chn-0">
+<div class=top><div><h3>이가네양꼬치 무교동점</h3><p class=line>평점 4.8 · 23:30까지</p></div><span class=badge>★ 추천</span></div>
+<div class=chips><span>📍 231m</span><span>🕙 ~23:30</span><span>★ 4.8</span></div>
+<div class=price><div><small>음식 1인</small><strong>28,600<i>원</i></strong></div><div class=sep></div><div><small>술·추가 여유</small><strong>57,000<i>원</i></strong></div></div>
+<div class=bar><span style="width:71.5%"></span></div>
+<p class=barlabel>음식 143,000원 / 예산 200,000원</p>
+<p class=desc>양갈비·양꼬치에 탕수육·토마토계란볶음·마파두부를 곁들인 구성.</p>
+<ul class=menu><li><span>양갈비 250g</span><span class=qty>×2</span><span class=amt>52,000</span></li><li><span>양왕꼬치 250g</span><span class=qty>×2</span><span class=amt>36,000</span></li><li><span>탕수육</span><span class=qty></span><span class=amt>21,000</span></li><li><span>토마토계란볶음</span><span class=qty></span><span class=amt>18,000</span></li><li><span>마파두부</span><span class=qty></span><span class=amt>16,000</span></li></ul>
+<div class=links><a href="https://map.naver.com/p/search/%EC%9D%B4%EA%B0%80%EB%84%A4%EC%96%91%EA%BC%AC%EC%B9%98%20%EB%AC%B4%EA%B5%90%EB%8F%99" target=_blank rel=noopener>네이버 지도</a><a href="https://www.diningcode.com/profile.php?rid=2e21zURqsj3K" target=_blank rel=noopener>메뉴·리뷰</a></div>
+</article><article class="card" id="chn-1">
+<div class=top><div><h3>덕후선생 광화문디타워점</h3><p class=line>북경오리 한 마리</p></div></div>
+<div class=chips><span>📍 298m</span><span>🕙 ~21:30</span><span>★ 4.2</span></div>
+<div class=price><div><small>음식 1인</small><strong>30,400<i>원</i></strong></div><div class=sep></div><div><small>술·추가 여유</small><strong>48,000<i>원</i></strong></div></div>
+<div class=bar><span style="width:76.0%"></span></div>
+<p class=barlabel>음식 152,000원 / 예산 200,000원</p>
+<p class=desc>특별한 날 느낌. 회식 방문 후기 8건. D타워 4층.</p>
+<ul class=menu><li><span>북경오리</span><span class=qty></span><span class=amt>120,000</span></li><li><span>신룡오이</span><span class=qty></span><span class=amt>8,000</span></li><li><span>계란초반</span><span class=qty>×2</span><span class=amt>24,000</span></li></ul>
+<div class=links><a href="https://map.naver.com/p/search/%EB%8D%95%ED%9B%84%EC%84%A0%EC%83%9D%20%EA%B4%91%ED%99%94%EB%AC%B8" target=_blank rel=noopener>네이버 지도</a><a href="https://www.diningcode.com/profile.php?rid=7kQMnycnD1GU" target=_blank rel=noopener>메뉴·리뷰</a></div>
+</article></div></section><section id=wst><div class=sechead><span class=emo>🍝</span><div><p class=en>WESTERN</p><h2>양식</h2></div></div><div class=grid><article class="card rec" id="wst-0">
+<div class=top><div><h3>샤이바나</h3><p class=line>나눠 먹기 좋은 미국 남부식</p></div><span class=badge>★ 추천</span></div>
+<div class=chips><span>📍 107m</span><span>🕙 ~21:00</span><span>★ 3.8</span></div>
+<div class=price><div><small>음식 1인 (약)</small><strong>30,900<i>원</i></strong></div><div class=sep></div><div><small>술·추가 여유</small><strong>45,600<i>원</i></strong></div></div>
+<div class=bar><span style="width:77.2%"></span></div>
+<p class=barlabel>음식 154,400원 / 예산 200,000원</p>
+<p class=desc>폭립·잠발라야·메기튀김 — 맥주와 잘 맞음. 파이낸스빌딩 지하 2층.</p>
+<ul class=menu><li><span>백립 플레이트</span><span class=qty>×2</span><span class=amt>75,800</span></li><li><span>씨푸드 잠발라야</span><span class=qty></span><span class=amt>22,900</span></li><li><span>캣피쉬 프라이즈</span><span class=qty></span><span class=amt>20,900</span></li><li><span>켄터키 치킨 샐러드</span><span class=qty></span><span class=amt>19,900</span></li><li><span>칠리 마카로니&amp;치즈</span><span class=qty></span><span class=amt>14,900</span></li></ul>
+<div class=links><a href="https://map.naver.com/p/search/%EC%83%A4%EC%9D%B4%EB%B0%94%EB%82%98%20%EB%AC%B4%EA%B5%90%EB%8F%99" target=_blank rel=noopener>네이버 지도</a><a href="https://www.diningcode.com/profile.php?rid=vNt714s2dO8W" target=_blank rel=noopener>메뉴·리뷰</a></div>
+</article><article class="card" id="wst-1">
+<div class=top><div><h3>스케줄오스테리아</h3><p class=line>분위기 · 평점 4.4</p></div></div>
+<div class=chips><span>📍 230m</span><span>🕙 ~22:00</span><span>★ 4.4</span></div>
+<div class=price><div><small>음식 1인</small><strong>31,800<i>원</i></strong></div><div class=sep></div><div><small>술·추가 여유</small><strong>41,000<i>원</i></strong></div></div>
+<div class=bar><span style="width:79.5%"></span></div>
+<p class=barlabel>음식 159,000원 / 예산 200,000원</p>
+<p class=desc>트러플 파스타와 한우 카르파치오 중심. 와인 한두 병 곁들이기 좋음.</p>
+<ul class=menu><li><span>트러플 치즈휠 딸리아뗄레</span><span class=qty></span><span class=amt>33,000</span></li><li><span>트러플 뇨끼</span><span class=qty></span><span class=amt>35,000</span></li><li><span>1++ 한우 카르파치오</span><span class=qty></span><span class=amt>29,000</span></li><li><span>감바스 알 아히요</span><span class=qty></span><span class=amt>28,000</span></li><li><span>아카미 생 참치 피자</span><span class=qty></span><span class=amt>34,000</span></li></ul>
+<div class=links><a href="https://map.naver.com/p/search/%EC%8A%A4%EC%BC%80%EC%A4%84%EC%98%A4%EC%8A%A4%ED%85%8C%EB%A6%AC%EC%95%84%20%EB%AC%B4%EA%B5%90%EB%8F%99" target=_blank rel=noopener>네이버 지도</a><a href="https://www.diningcode.com/profile.php?rid=85xvcL00KAkM" target=_blank rel=noopener>메뉴·리뷰</a></div>
+</article></div></section><section id=jpn><div class=sechead><span class=emo>🍣</span><div><p class=en>JAPANESE</p><h2>일식</h2></div></div><div class=grid><article class="card rec" id="jpn-0">
+<div class=top><div><h3>미진일식</h3><p class=line>1인 정식이라 계산 깔끔</p></div><span class=badge>★ 추천</span></div>
+<div class=chips><span>📍 83m</span><span>🕙 ~22:00</span><span>★ 4.2</span></div>
+<div class=price><div><small>음식 1인</small><strong>29,000<i>원</i></strong></div><div class=sep></div><div><small>술·추가 여유</small><strong>55,000<i>원</i></strong></div></div>
+<div class=bar><span style="width:72.5%"></span></div>
+<p class=barlabel>음식 145,000원 / 예산 200,000원</p>
+<p class=desc>회정식 B 5인분. 10월부터 대방어 시즌(1인 29,000원) — 추가하면 예산 초과.</p>
+<ul class=menu><li><span>회정식 B</span><span class=qty>×5</span><span class=amt>145,000</span></li></ul>
+<div class=links><a href="https://map.naver.com/p/search/%EB%AF%B8%EC%A7%84%EC%9D%BC%EC%8B%9D%20%EB%AC%B4%EA%B5%90%EB%8F%99" target=_blank rel=noopener>네이버 지도</a><a href="https://www.diningcode.com/profile.php?rid=bhuPqPQWlNjB" target=_blank rel=noopener>메뉴·리뷰</a></div>
+</article><article class="card" id="jpn-1">
+<div class=top><div><h3>야마야 디타워점</h3><p class=line>편하게 마시는 이자카야</p></div></div>
+<div class=chips><span>📍 298m</span><span>🕙 ~21:30</span><span>★ 3.8</span></div>
+<div class=price><div><small>음식 1인</small><strong>28,100<i>원</i></strong></div><div class=sep></div><div><small>술·추가 여유</small><strong>59,500<i>원</i></strong></div></div>
+<div class=bar><span style="width:70.2%"></span></div>
+<p class=barlabel>음식 140,500원 / 예산 200,000원</p>
+<p class=desc>하카타 모츠나베에 명란 안주 다섯 가지.</p>
+<ul class=menu><li><span>모츠나베 (1인분)</span><span class=qty>×5</span><span class=amt>94,500</span></li><li><span>명란소스 카라아게</span><span class=qty></span><span class=amt>8,000</span></li><li><span>치킨난반</span><span class=qty></span><span class=amt>12,000</span></li><li><span>방어회 카르파쵸</span><span class=qty></span><span class=amt>12,000</span></li><li><span>명란 하루마끼</span><span class=qty></span><span class=amt>7,000</span></li><li><span>테바사키</span><span class=qty></span><span class=amt>7,000</span></li></ul>
+<div class=links><a href="https://map.naver.com/p/search/%EC%95%BC%EB%A7%88%EC%95%BC%20%EA%B4%91%ED%99%94%EB%AC%B8" target=_blank rel=noopener>네이버 지도</a><a href="https://www.diningcode.com/profile.php?rid=pqFHZ5nf6ZqF" target=_blank rel=noopener>메뉴·리뷰</a></div>
+</article></div></section>
+<footer><ul>
+<li>가격은 다이닝코드 10/8 기준이에요. 매장과 다를 수 있으니 예약할 때 확인해 주세요. 거리는 사무실 기준 직선거리예요.</li>
+<li>술값은 포함하지 않았어요. "술·추가 여유"만큼 술을 시키면 1인 4만 원에 맞아요.</li>
+<li>오늘 저녁 5명 자리와 룸 여부는 확인하지 않았어요. 전화로 먼저 확인해 주세요.</li>
+<li>뺀 곳: 브라주카그릴(저녁 슈하스코 1인 40,900원, 음식만으로 예산 초과), 한라담 무교점(폐점 표시).</li>
+</ul></footer>
+</div></main></body></html>
